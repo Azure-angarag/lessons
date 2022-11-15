@@ -1,0 +1,30 @@
+div{
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    transition-duration: 2s;
+    transition-property: all;
+    transition-timing-function: 6s;
+    transition-delay: 0.3s;
+}
+div:hover{
+    width: 100vmax;
+    background-color: rgb(68, 214, 214);
+    border-radius: 20px;
+}
+button{
+    width: 100px;
+    height: 100px;
+    background-color: purple;
+    border: 0ch;
+    transition-duration: 2s;
+    transition-property: all;
+    transition-timing-function: 9s;
+    transition-delay: 0.3;
+    border-radius: 2px;
+}
+button:hover{
+    width: 100vmax;
+    background-color: blueviolet;
+    border-radius: 10px;
+}

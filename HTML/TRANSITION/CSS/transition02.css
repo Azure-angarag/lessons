@@ -1,0 +1,28 @@
+.container{
+    border-radius: 50px;
+    height: 100px;
+    width: 200px;
+    background-color: grey;
+    transition: 1s;
+}
+input{
+    display: none;
+}
+.circle{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background-color: aqua;
+    transition: 1s;
+    /* margin-left: 0; */
+}
+
+
+input[type="checkbox"]:checked + .container{
+    background-color: black;
+}
+
+input[type="checkbox"]:checked + .container .circle{
+    margin-left: 100px;
+    transition: 1s;
+}

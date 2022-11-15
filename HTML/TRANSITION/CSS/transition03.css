@@ -1,0 +1,61 @@
+.shadow{
+    top: 200px;
+    width: 500px;
+    height: 500px;
+    border: 2px solid black;
+    margin: 0 auto;
+    position: relative;
+}
+
+.ball{
+    width: 100px;
+    height:100px;
+    position: absolute;
+    top: 200px;
+   left: 200px;
+    border-radius: 50%;
+    transition-property: top, left, border-radius, height, width;
+    transition-duration: 2s, 1s, 2s;
+    transition-delay:0s, 0s, 1s ;
+    border: 0.5px, solid, black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ball-1{
+    background: linear-gradient(red, yellow);
+    z-index: 100;
+}
+
+.ball-2{
+    background-color: salmon;
+    z-index: 90;
+}
+
+.ball-3{
+    background-color: rgb(168, 69, 214);
+    z-index: 80;
+}
+.shadow:hover .ball-1 {
+    top: 0;
+    left: 0;
+    width: 200px;
+}
+
+.shadow:hover .ball-2 {
+    top: 0;
+    left: 400px;
+    border-radius: 0;
+}
+
+.shadow:hover .ball-3 {
+    top: 380px;
+    left: 380px;
+    height: 120px;
+    width: 120px;
+    border-radius: 0;
+}
+
+span{
+    color: antiquewhite;
+}
