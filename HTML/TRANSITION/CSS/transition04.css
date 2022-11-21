@@ -1,0 +1,51 @@
+.container{
+    background-color: black;
+    width: 700px;
+    height: 100vh;
+    margin-left: -500px;
+    transition-property: all;
+    transition-duration: 1s;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+body{
+    width: 100vh;
+    overflow: hidden;
+    margin: 0%;
+}
+.container:hover{
+    margin-left: 0;
+}
+div{
+    background-color: green;
+    height: 50px;
+    font-size: 45px;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    justify-content: center;
+
+}
+h1{
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+}
+h1:hover{
+    cursor: pointer;
+}
+div:hover{
+    background-color: white;
+    color: black;
+    height: 65px;
+    transition: all 0.5s;
+    align-items: center;
+    cursor: pointer;
+}
+h1{
+    opacity: 0;
+}
+h1:hover{
+    opacity: 1;
+}

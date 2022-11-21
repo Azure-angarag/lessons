@@ -1,0 +1,17 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+span{
+    font-size: 100px;
+    border: 2px solid black;
+    color: aliceblue;
+    background-color: rgb(181, 172, 172);
+}
+span:hover{
+    cursor:pointer;
+    background-color: rgb(255, 0, 0);
+    transition: color, 1s;
+}

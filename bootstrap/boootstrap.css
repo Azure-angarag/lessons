@@ -1,0 +1,11 @@
+.dad{
+    display: none;
+}
+@media screen and (max-width:400px){ 
+    .dad{
+        display: block;
+    }
+    .mom{
+        display: none;
+    }
+}
