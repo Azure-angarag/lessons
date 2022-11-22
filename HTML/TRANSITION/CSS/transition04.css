@@ -43,9 +43,3 @@ div:hover{
     align-items: center;
     cursor: pointer;
 }
-h1{
-    opacity: 0;
-}
-h1:hover{
-    opacity: 1;
-}

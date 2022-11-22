@@ -4,14 +4,43 @@ body{
     align-items: center;
     height: 100vh;
 }
-span{
+.text{
     font-size: 100px;
     border: 2px solid black;
     color: aliceblue;
     background-color: rgb(181, 172, 172);
+    position: relative;
+    height: 115px;
+    z-index: 2;
 }
-span:hover{
+.text:hover {
     cursor:pointer;
     background-color: rgb(255, 0, 0);
-    transition: color, 1s;
+    transition: 0.6s;
+    position: relative;
+}
+.circle{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: red;
+    border: 1px solid black;
+    position: absolute;
+    margin-left: 690px;
+    margin-top:-140px;
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 50px;
+    transition: all 0.6s;
+}
+.container:hover .circle{
+    transition: 0.6s;
+    margin-top: -90px;
+    margin-left: 340px;
+    justify-content: center;
+    position: absolute;
+    z-index: 1;
 }
