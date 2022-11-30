@@ -187,13 +187,22 @@ readable */
 //     console.log("chitsuu yum baina naizlii");
 // }
 
-let hours, ratePerHours=28, tsalin=0;
+// let hours, ratePerHours=28, tsalin=0;
 
-hours = prompt("Ta ajillasan tsagaa oruulna uu:");
+// hours = prompt("Ta ajillasan tsagaa oruulna uu:");
 
-tsalin = hours * ratePerHours;
-console.log("Tanii tsalin:", tsalin , "$" );
+// tsalin = hours * ratePerHours;
+// console.log("Tanii tsalin:", tsalin , "$" );
 
-document.getElementByTag(body){
+let leapYear = 2004, answer;
 
+if(leapYear % 400 === 0){
+    answer="It's leapYear";
+}else if(!leapYear % 100 == 0 && leapYear % 4 ===0 ){
+    answer="It's Leap Year";
+}else{
+    answer = "It's not Leap Year";
+}{
+    answer = "It's Not Leap Year";
 }
+console.log(answer);
