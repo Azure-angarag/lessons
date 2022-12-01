@@ -28,10 +28,10 @@
 // Math.random()  0 ... <1
 
 // 6. Өгөгдсөн тоог анхны мөн эсэхийг олох программ бич
-
+let a = parseInt(prompt("Ta duriin toogoo oruulna uu1"));
 let b = parseInt(prompt("Ta duriin toogoo oruulna uu"));
 
-let isPrime = true, a=2, sum=0;
+let isPrime = true, sum=0;
 
 while(a <= b){
     if(a === 2){
@@ -52,10 +52,10 @@ while(a <= b){
         
     }
     if(isPrime){
-        console.log(`anhnii toonuud ni- ${a}`)
+        console.log(`anhnii toonuud ni: ${a}`)
         sum++;
     }
     isPrime = true;
     a++;
 }
-console.log(`anhnii toonuudiin niit too- ${sum}`)
+console.log(`anhnii toonuudiin niit too ${sum}`)
