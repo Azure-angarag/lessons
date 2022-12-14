@@ -16,6 +16,9 @@ const cardItem = (text) =>{
     return item;
 }
 
+// let editing = `<button onclick = edited(this) ><i class="edited fa-light fa-plus"></i></button>`;
+// let editedd = `<button class="edit" onclick = edit(this)><i class="fas fa-pen"></i></button>`;
+
 const taskAdd = () => {
     let text = inputText.value;
     if(text === ""){
@@ -48,13 +51,32 @@ function check(e){
 }
 function edit(e){
     let inp=e.parentNode.parentNode.querySelector(".text");
-    inp.removeAttribute("readonly");
-    let edt = e.parentNode.parentNode
+    // console.log(e.firstChild.classList);
+    let cl = e.firstChild.classList;
+
+
+    if(cl.contains("fa-pen")){
+        cl.remove("fa-pen");
+        cl.add("fa-plus", "fa-light");
+        inp.removeAttribute("readonly");
+    }
+    else {
+        cl.remove("fa-plus", "fa-light");
+        cl.add("fa-pen");
+        inp.setAttribute("readonly", true);
+
+    }
+    
+    // let edt = e.parentNode.parentNode.querySelector(".edit");
+    // edt.innerHTML = editing;
 }
-function edited(e){
-    let inp=e.parentNode.parentNode.querySelector(".text");
-    inp.setAttribute("readonly");
-}
+// function edited(e){
+//     console.log("plus")
+//     let edt = e.parentNode.parentNode.querySelector(".edited");
+//     console.log(edt);
+//     edt.innerHTML = editted;
+
+// }
 
 
 

@@ -148,3 +148,12 @@ img {
   max-width: 600px;
   margin: 0 auto;
 }
+
+.main{
+    height: 700px;
+    overflow: scroll;
+}
+
+body{
+    overflow: hidden;
+}
