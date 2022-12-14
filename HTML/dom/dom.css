@@ -1,0 +1,28 @@
+body{
+    display: flex;
+    margin: auto;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    flex-direction: column;
+}    
+.myBtn{
+    height: 100px;
+    width: 140px;
+    border-radius: 50px;
+    background-color: aqua;
+    margin-top: 21%;
+    font-size: 30px;
+    border-style: solid;
+    border:0;
+}
+.box{
+    height: 500px;
+    width: 500px;
+    background-color: aqua;
+}
+.row{
+    display: flex;
+    gap: 10px;
+}
+

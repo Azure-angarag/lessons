@@ -194,15 +194,59 @@ readable */
 // tsalin = hours * ratePerHours;
 // console.log("Tanii tsalin:", tsalin , "$" );
 
-let leapYear = 2004, answer;
+// let leapYear = 2004, answer;
 
-if(leapYear % 400 === 0){
-    answer="It's leapYear";
-}else if(!leapYear % 100 == 0 && leapYear % 4 ===0 ){
-    answer="It's Leap Year";
-}else{
-    answer = "It's not Leap Year";
-}{
-    answer = "It's Not Leap Year";
+// if(leapYear % 400 === 0){
+//     answer="It's leapYear";
+// }else if(!leapYear % 100 == 0 && leapYear % 4 ===0 ){
+//     answer="It's Leap Year";
+// }else{
+//     answer = "It's not Leap Year";
+// }{
+//     answer = "It's Not Leap Year";
+// }
+// console.log(answer);
+
+let data = ['Засгийн',
+'газарт',
+'6.4',
+'сая',
+'тонн', 
+'нүүрс', 
+'алдагдсан', 
+'гэх', 
+'мэдээлэл', 
+'ирээгүй', 
+'байна.', 
+'Бодит', 
+'байдалд', 
+'ийм', 
+'их', 
+'хэмжээний', 
+'нүүрс', 
+'алдагдсан', 
+'гэх', 
+'асуудал', 
+'эргэлзээтэй', 
+'байна.', 
+'Хууль', 
+'хяналтын', 
+'байгууллага', 
+'хяналт', 
+'шалгалтын', 
+'ажил', 
+'явуулж', 
+'байна'],
+sum = 0;
+input = String(prompt(`Ta haih utgaa oruulna uu`)) ;
+
+
+for(let i = 0; i < data.length; i++ ){
+    if(data[i] == input ){
+        sum += 1;
+    }
 }
-console.log(answer);
+
+alert( `Tanii oruulsan ${input} utga ni bidnii ugvvlbert ${sum} shirheg baina.` );
+
+
