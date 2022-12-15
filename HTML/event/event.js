@@ -33,7 +33,7 @@ const taskAdd = () => {
 addBtn.addEventListener("click",taskAdd);
 document.addEventListener('keyup',(e)=>{
     if(e.key === "Enter"){
-        taskAdd();
+            taskAdd();
     }
 })
 
@@ -44,16 +44,14 @@ function ustgah(e){
     parent.removeChild(child);
 }
 function check(e){
-    let child=e.parentNode.parentNode;
-    let parent=e.parentNode.parentNode.parentNode;
-    console.log(e.parentNode.parentNode.parentNode);
-    parent.removeChild(child);
+    let inp=e.parentNode.parentNode.children[0];
+    inp.style.setProperty("text-decoration", "line-through"); 
 }
 function edit(e){
-    let inp=e.parentNode.parentNode.querySelector(".text");
+    let inp=e.parentNode.parentNode.children[0];
     // console.log(e.firstChild.classList);
     let cl = e.firstChild.classList;
-
+    inp.setAttribute("value", inp.value)
 
     if(cl.contains("fa-pen")){
         cl.remove("fa-pen");
@@ -66,19 +64,18 @@ function edit(e){
         inp.setAttribute("readonly", true);
 
     }
-    
-    // let edt = e.parentNode.parentNode.querySelector(".edit");
-    // edt.innerHTML = editing;
 }
-// function edited(e){
-//     console.log("plus")
-//     let edt = e.parentNode.parentNode.querySelector(".edited");
-//     console.log(edt);
-//     edt.innerHTML = editted;
 
-// }
+// const d = new Date;
+// console.log(`Date : ${d.getHours()} : ${d.getMinutes()} : ${d.getSeconds()} `)
+
+// setInterval(function () {date.innerHTML = `Date : ${d.getHours()} : ${d.getMinutes()} : ${d.getSeconds()} `}, 1000);
 
 
+setInterval(myTimer, 1000);
 
-
+function myTimer() {
+    const date = new Date();
+    document.getElementById("dates").innerHTML = ` Date : ${date.getHours()} : ${date.getMinutes()} : ${date.getSeconds()}`
+}
 
