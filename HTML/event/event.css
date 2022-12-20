@@ -43,6 +43,7 @@ body {
   margin: 0rem 2rem 0rem 2rem;
   align-items: stretch;
   height: 60px;
+  gap: 5px;
 }
 #center-entry input,
 #to-do-input {
@@ -154,3 +155,37 @@ img {
     overflow: scroll;
 }
 
+.slct{
+  background-color: #f49d1a;
+  width: 5rem;
+  padding: 0.8rem;
+  border: none;
+  position: relative;
+  color: white;
+  transition: 0.5s;
+}
+
+.slct:hover {
+  cursor: pointer;
+  background-color: #1c315e;
+}
+
+.high{
+  border-width: 2px;
+  border-color: red;
+}
+
+.mid{
+  border-width: 2px;
+  border-color: rgb(235, 210, 23);
+}
+
+.low{
+  border-width: 2px;
+  border-color: rgb(37, 211, 37);
+}
+
+.midLine{
+  text-decoration: line-through;
+  color: grey;
+}

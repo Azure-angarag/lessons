@@ -2,10 +2,12 @@ const addBtn = document.getElementById("add");
 const taskList = document.getElementById("tasks");
 const inputText = document.getElementById("to-do-input");
 let date = document.getElementById("date")
+console.log(selct)
 
 const cardItem = (text) =>{ 
+    let selct = document.getElementById("selct").value;
     const item = `
-                <div class="task">
+                <div class="task ${selct}">
                     <input type="text" class="text" readonly value="${text}" />
                     <div class="actions">
                         <button class="edit" onclick = edit(this)><i class="fas fa-pen"></i></button>
@@ -40,18 +42,23 @@ document.addEventListener('keyup',(e)=>{
 function ustgah(e){
     let child=e.parentNode.parentNode;
     let parent=e.parentNode.parentNode.parentNode;
-    console.log(e.parentNode.parentNode.parentNode);
+    console.log(parent);
     parent.removeChild(child);
 }
 function check(e){
     let inp=e.parentNode.parentNode.children[0];
-    inp.style.setProperty("text-decoration", "line-through"); 
+    let pL = inp.classList;
+    if(pL.contains("midLine")){
+        pL.remove("midLine");
+    }else{
+        pL.add("midLine");
+    }
 }
 function edit(e){
     let inp=e.parentNode.parentNode.children[0];
     // console.log(e.firstChild.classList);
     let cl = e.firstChild.classList;
-    inp.setAttribute("value", inp.value)
+    inp.setAttribute("value", inp.value);
 
     if(cl.contains("fa-pen")){
         cl.remove("fa-pen");
@@ -66,10 +73,8 @@ function edit(e){
     }
 }
 
-// const d = new Date;
-// console.log(`Date : ${d.getHours()} : ${d.getMinutes()} : ${d.getSeconds()} `)
 
-// setInterval(function () {date.innerHTML = `Date : ${d.getHours()} : ${d.getMinutes()} : ${d.getSeconds()} `}, 1000);
+
 
 
 setInterval(myTimer, 1000);
