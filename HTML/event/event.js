@@ -30,6 +30,7 @@ const taskAdd = () => {
         taskList.innerHTML += cardItem(text);
     }
     inputText.value = "";
+    let selct = document.getElementById("selct").value = "mid";
 }
 
 addBtn.addEventListener("click",taskAdd);
